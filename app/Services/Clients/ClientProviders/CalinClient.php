@@ -220,7 +220,8 @@ class CalinClient extends AbstractClient
             'headers' => [
                 'Content-Type' => 'application/json',
                 'Accept'       => 'application/json'
-            ]
+            ],
+            'verify' => false
         ]);
     }
     

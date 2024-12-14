@@ -157,14 +157,14 @@ RUN chmod -R 644 /etc/cron.d
 # PHP REDIS EXTENSION
 ###########################################################################
 
-ARG INSTALL_PHPREDIS=false
+# ARG INSTALL_PHPREDIS=false
 
-RUN if [ ${INSTALL_PHPREDIS} = true ]; then \
-    # Install Php Redis extension
-    printf "\n" | pecl -q install -o -f redis && \
-    echo "extension=redis.so" >> /etc/php/${CORLANG_PHP_VERSION}/mods-available/redis.ini && \
-    phpenmod redis \
-;fi
+# RUN if [ ${INSTALL_PHPREDIS} = true ]; then \
+#     # Install Php Redis extension
+#     printf "\n" | pecl -q install -o -f redis && \
+#     echo "extension=redis.so" >> /etc/php/${CORLANG_PHP_VERSION}/mods-available/redis.ini && \
+#     phpenmod redis \
+# ;fi
 
 ###########################################################################
 # Check PHP version:
