@@ -70,7 +70,7 @@ class StronClient extends AbstractClient
         $data = [
             'CompanyName'     => $apiConfig['companyName'],
             'UserName'        => $apiConfig['username'],
-            'Password'        => $apiConfig['password'],
+            'PassWord'        => $apiConfig['password'],
             'MeterId'         => $meter_id,
             'is_vend_by_unit' => true,
             'Amount'          => "$energy",
@@ -156,7 +156,7 @@ class StronClient extends AbstractClient
         $data = [
             'CompanyName' => $apiConfig['companyName'],
             'UserName'    => $apiConfig['username'],
-            'Password'    => $apiConfig['password'],
+            'PassWord'    => $apiConfig['password'],
             'CustomerId'  => $this->config['customer_id'],
             'METER_ID'    => $meterCode,
         ];
